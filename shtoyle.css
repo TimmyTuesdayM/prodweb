@@ -1,0 +1,294 @@
+body {
+  margin: 0;
+  height: 100vh;
+  width: 100%;
+  background: #0f2027; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #2c5364,
+    #203a43,
+    #0f2027
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #2c5364,
+    #203a43,
+    #0f2027
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 2;
+}
+.hednnav {
+  display: flex;
+  box-shadow: 5px 3px 6px rgb(0, 29, 2);
+}
+.logo {
+  height: 100px;
+  width: auto;
+  background-color: white;
+  box-shadow: 5px 3px 3px rgb(0, 29, 2);
+  border-radius: 2px;
+}
+nav {
+  background-color: rgb(0, 102, 0);
+  height: 100px;
+  width: 100%;
+}
+.nav-links {
+  margin-left: -35px;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.5rem;
+  font-family: Outfit, sans-serif;
+  font-weight: 650;
+  padding-right: 7px;
+  margin-top: 35px;
+}
+@media (max-width: 424px) {
+  .nav-links li {
+    font-size: 20px;
+  }
+  .nav-links {
+    margin-top: 42px;
+  }
+}
+.nav-links li a {
+  color: white;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+nav a {
+  text-decoration: none;
+}
+.nav-links li a:hover {
+  color: rgb(194, 255, 194);
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px rgb(0, 92, 8), 0 0 10px rgb(19, 167, 0),
+      0 0 20px #47fc00, 0 0 30px #4efa79, 0 0 40px #5afc75, 0 0 50px #6dff68,
+      0 0 60px #194d04;
+  }
+  to {
+    text-shadow: 4px 4px 20px rgb(138, 255, 92), 0 0 30px #5eff02,
+      0 0 40px #117c28, 0 0 50px #24db76, 0 0 60px #18ff3f, 0 0 70px #1fa547,
+      0 0 50px #31d347;
+  }
+}
+.divider {
+  border-left: 1px solid rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
+  width: 1px;
+  height: 20px;
+}
+
+main {
+  padding-top: 120px;
+  height: auto;
+  min-width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 1;
+}
+.placeHolderGalaxy {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(media/space.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+  width: 300px;
+  border-radius: 15px;
+  position: relative;
+  align-items: center;
+  display: flex;
+  box-shadow: 5px 5px 3px black;
+}
+main p {
+  font-size: 2rem;
+  font-family: Outfit;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  align-items: center;
+  padding: 15px;
+  text-shadow: 1px 1px 2px #0aa9da;
+}
+
+#music {
+  margin-top: -50px;
+}
+.musicbanner {
+  margin-top: 50px;
+  font-size: 2rem;
+  font-family: Outfit;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  align-items: center;
+  padding: 15px 15px 0px 15px;
+  text-shadow: 1px 1px 2px #0aa9da;
+}
+.container_music {
+  display: flex;
+  overflow-x: scroll;
+  width: 100vw;
+  margin-right: auto;
+  margin-left: auto;
+}
+.swipeicon {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 100, 25);
+  border-radius: 4px;
+  text-align: center;
+  display: inline-block;
+  padding: 7px 7px 7px 7px;
+  border: 2px solid rgb(0, 168, 42);
+  margin: auto 25px auto 25px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-family: Outfit, sans-serif;
+  font-weight: 800;
+}
+.music_bucket {
+  margin-left: 25px;
+}
+.music_bucket iframe {
+  height: 220px;
+  width: 320px;
+}
+.mybutton {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 100, 25);
+  border-radius: 300px;
+  text-align: center;
+  display: inline-block;
+  padding: 10px 15px 10px 15px;
+  border: 2px solid rgb(0, 168, 42);
+  margin: auto 25px auto 25px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-family: Outfit, sans-serif;
+  font-weight: 800;
+}
+
+#video {
+  margin-top: -50px;
+}
+.videobanner {
+  margin-top: 50px;
+  font-size: 2rem;
+  font-family: Outfit;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  align-items: center;
+  padding: 15px 15px 0px 15px;
+  text-shadow: 1px 1px 2px #0aa9da;
+}
+.container_video {
+  display: flex;
+  overflow-x: scroll;
+  width: 100vw;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.video_bucket {
+  display: flex;
+  height: auto;
+  margin-left: 25px;
+  border-radius: 2px;
+  border: 3px solid #0c4e7a;
+}
+.video_bucket iframe {
+  height: 290px;
+  width: 370px;
+}
+
+#web {
+  margin-top: -50px;
+}
+.webbanner {
+  margin-top: 50px;
+  font-size: 2rem;
+  font-family: Outfit;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  align-items: center;
+  padding: 15px 15px 0px 15px;
+  text-shadow: 1px 1px 2px #0aa9da;
+}
+
+.webcontainer {
+  display: flex;
+  justify-content: space-between;
+  width: 350px;
+  height: 400px;
+  flex-wrap: wrap;
+  margin-right: auto;
+  margin-left: auto;
+}
+.webone {
+  height: 150px;
+  width: 150px;
+  background-image: url("learningProjects/project2point5/media/bikeAttackdrk.jpg");
+  background-size: cover;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+.webtwo {
+  height: 150px;
+  width: 150px;
+  background-color: #054a83;
+  border-radius: 6px;
+}
+.webthree {
+  height: 150px;
+  width: 150px;
+  background-color: #477e53;
+  border-radius: 6px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.webone,
+.webtwo,
+.webthree {
+  -webkit-box-shadow: -1px 1px 5px 9px rgba(255, 255, 255, 0.75);
+  -moz-box-shadow: -1px 1px 5px 9px rgba(255, 255, 255, 0.75);
+  box-shadow: -1px 1px 5px 9px rgba(255, 255, 255, 0.75);
+  text-align: center;
+  font-family: Outfit, sans-serif;
+  box-sizing: border-box !important;
+}
+.webbutton {
+  padding-top: 50px;
+  padding-bottom: 45px;
+}
+.webbutton span {
+  font-size: 1.5rem;
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+}
+
+footer {
+  background-image: linear-gradient(
+    rgba(31, 66, 99, 0.041),
+    rgba(8, 27, 7, 0.829)
+  );
+  height: 50px;
+  width: 100%;
+  bottom: 0;
+  position: relative;
+}
