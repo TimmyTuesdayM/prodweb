@@ -1,0 +1,122 @@
+html {
+  margin: 0;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+body h1 {
+  text-align: center;
+  color: rgb(0, 131, 17);
+  font-size: 65px;
+  font-weight: 800;
+  text-shadow: 2px 2px 2px black;
+  border: solid 3px green;
+  font-family: Outfit, sans-serif;
+}
+
+@media screen and (max-width: 991px) {
+  /* start of large tablet styles */
+  .videos {
+    overflow-y: hidden;
+    width: 100vw;
+  }
+}
+.videos {
+  width: auto;
+  height: 100%;
+  background-image: url(media/transparentlogo.png);
+  background-repeat: repeat;
+  background-size: 250px 200px;
+}
+
+.videos h2 {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-family: Outfit, sans-serif;
+}
+.contentwrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.game {
+  width: 100px;
+  height: 50px;
+  background-color: green;
+  border: solid 2px gray;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 17px;
+  padding-top: -12px;
+}
+
+.gamevidwrapper {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+  width: 80vw;
+  margin-bottom: 50px;
+}
+
+.musicvidwrapper {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+  width: 80vw;
+  margin-bottom: 50px;
+}
+.othervidwrapper {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+  width: 80vw;
+  margin-bottom: 50px;
+}
+
+.video_bucket {
+  display: flex;
+  height: auto;
+  margin-top: 20px;
+  border-radius: 2px;
+  border: 3px solid #0c4e7a;
+}
+
+.music {
+  width: 100px;
+  height: 50px;
+  background-color: green;
+  border: solid 2px gray;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 17px;
+  padding-top: -12px;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 550px;
+}
+.other {
+  width: 100px;
+  height: 50px;
+  background-color: green;
+  border: solid 2px gray;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 17px;
+  padding-top: -12px;
+}
+
+body h3 {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin-right: 30px;
+}
