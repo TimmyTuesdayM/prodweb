@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+    background: #050008; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #030007,
+      #203a43,
+      #0f2027
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #050011,
+      #0d0120,
+      #000000
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 2;
+  }
+  .hednnav {
+    display: flex;
+    box-shadow: 5px 3px 6px rgb(43, 7, 102);
+  }
+  .logo {
+    height: 100px;
+    width: auto;
+    background-color: white;
+    box-shadow: 5px 3px 6px rgb(15, 0, 29);
+    
+  }
+  nav {
+    background-color: rgb(3, 1, 5);
+    height: 100px;
+    width: 100%;
+  }
+  .nav-links {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.5rem;
+    font-family: Outfit, sans-serif;
+    font-weight: 650;
+    padding-right: 20px;
+    margin-top: 35px;
+  }
+  @media (max-width: 424px) {
+    .nav-links li {
+      font-size: 20px;
+    }
+    .nav-links {
+      margin-top: 42px;
+    }
+  }
+  .nav-links li a {
+    color: white;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  }
+  nav a {
+    text-decoration: none;
+  }
+  .nav-links li a:hover {
+    color: rgb(236, 194, 255);
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 5px rgb(51, 0, 92), 0 0 10px rgb(92, 0, 167),
+        0 0 20px #c100fc, 0 0 30px #bb4efa, 0 0 40px #ce5afc, 0 0 50px #cf68ff,
+        0 0 60px #36044d;
+    }
+    to {
+      text-shadow: 4px 4px 20px rgb(155, 92, 255), 0 0 30px #c402ff,
+        0 0 40px #67117c, 0 0 50px #8924db, 0 0 60px #d818ff, 0 0 70px #7b1fa5,
+        0 0 50px #cd31d3;
+    }
+  }
+  .divider {
+    border-left: 1px solid rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+    width: 1px;
+    height: 20px;
+  }
+  
+  main {
+    padding-top: 120px;
+    height: auto;
+    min-width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 1;
+  }
