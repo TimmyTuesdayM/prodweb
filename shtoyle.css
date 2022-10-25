@@ -155,7 +155,7 @@ main p {
   display: inline-block;
   padding: 7px 7px 7px 7px;
   border: 2px solid rgb(0, 168, 42);
-  margin: auto 25px auto 25px;
+  margin: auto;
   text-decoration: none;
   font-size: 1rem;
   font-family: Outfit, sans-serif;
@@ -261,6 +261,7 @@ main p {
   border-radius: 6px;
   margin-left: auto;
   margin-right: auto;
+  padding-top: -50px;
 }
 .webone,
 .webtwo,
@@ -283,6 +284,14 @@ main p {
   color: white;
 }
 
+
+.chewbButton {
+  display: inline-block;
+  height: 150px;
+  width: 150px;
+  background-image:url(media/IMG_20221016_140922.jpg) ;
+  border-radius: 3px;
+}
 footer {
   background-image: linear-gradient(
     rgba(31, 66, 99, 0.041),
