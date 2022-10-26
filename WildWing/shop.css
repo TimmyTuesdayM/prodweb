@@ -51,12 +51,30 @@ nav {
   }
   @media (max-width: 424px) {
     .tabContainer .buttonContainer button {
-      font-size: 15px;
+      font-size: 12px;
+      height: 80px;
+      width: 24%;
+      font-weight: 600;
+      
     }
     .logo {
       height:80px;
       width: auto;
     }
+    nav {
+      height: 80px;
+      width: 100%;
+    }
+    .buttonContainer {
+      padding-left: 3px;
+    }
+    .tabContainer.buttonContatiner {
+      height: 80px;
+    }
+    #homePanel {
+      display: none;
+    }
+
   }
 
   .tabContainer .buttonContainer button:hover {
